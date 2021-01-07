@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Questionaire</title>
+</head>
+
+<body>
+    <!-- timer -->
+    <div>
+        <p id="second"></p>
+    </div>
+
+    <div class="container">
+        <div id="page-s">
+            <div class="row">
+
+                <h1 class="title">Coding Quiz Challenge</h1>
+
+            </div>
+
+            <div class="row">
+                <p class="text"> Try to answer the following questions
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque amet debitis corporis aperiam
+                    provident?
+                    Rerum dolore reiciendis reprehenderit fugit quod!
+                </p>
+            </div>
+
+            <div class="row">
+
+                <button id="start-btn">Start Quiz</button>
+
+            </div>
+        </div>
+
+        <div id="page-1" class="hide ">
+            <div id="question">
+                <h1>Commonly used data types DO NOT inculde: </h1>
+            </div>
+            <div id="answer-buttons" class="btn-grid">
+                <button id="btn" onclick="myFunction()"> String </button>
+                <button id="btn"> booleans </button>
+                <button id="btn"> alerts </button>
+                <button id="btn"> numbers </button>
+            </div>
+        </div>
+
+
+        <div id="page-2" class="hide">
+            <h1>The condition in an if / else statement is enclose within ______: </h1>
+
+            <div id="Question2Buttons" class="btn-grid">
+                <button id="btn" onclick="myFunction()"> quotas </button>
+                <button id="btn"> curly brackets </button>
+                <button id="btn"> brackets </button>
+                <button id="btn"> square brackets </button>
+            </div>
+
+        </div>
+
+        <div id="page-3" class="hide">
+            <h1>Array in javascript can be used to store _____. </h1>
+            <div id="Question3Buttons" class="btn-grid">
+                <button id="btn" onclick="myFunction()"> number and strings </button>
+                <button id="btn"> other Array </button>
+                <button id="btn"> booleans </button>
+                <button id="btn"> all of the above </button>
+            </div>
+
+        </div>
+
+        <div id="page-4" class="hide">
+            <h1>String values must be enclose within ____ when being assigned to variables. </h1>
+
+            <div id="Question4Buttons" class="btn-grid">
+                <button id="btn" onclick="myFunction()"> commas </button>
+                <button id="btn"> curly brackets </button>
+                <button id="btn"> quotas </button>
+                <button id="btn"> square brackets </button>
+            </div>
+        </div>
+
+
+        <div id="page-5" class="hide">
+            <h1>A very useful tool used during development and debugging for printing content to the debugging is: </h1>
+            <div id="Question5Buttons" class="btn-grid">
+                <button id="btn" onclick="myFunction()"> javascript </button>
+                <button id="btn"> bash </button>
+                <button id="btn"> brackets </button>
+                <button id="btn"> console.log </button>
+            </div>
+        </div>
+
+        <div id="page-done" class="hide">
+            <form id="enter-name" method="POST">
+                <h1>All done!!!</h1>
+                <input type="text" placeholder="Please entry your name" name="name-text" id="name-text" />
+                <button id="submit-button">Submit</button>
+            </form>
+        </div>
+
+        <div id="highscores" class="hide">
+            <h1>Reslute</h1>
+            <p id="name-list"></p>
+            <button id = "restart">Restart</button>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
