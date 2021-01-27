@@ -81,7 +81,7 @@ function restartGame(){
 
 startButton.addEventListener('click', startTimerfunction);
 //startbutton
-setInterval(function01, 1000);
+setInterval(startTimerfunction, 1000);
 
 startButton.addEventListener('click', startGame);
 
