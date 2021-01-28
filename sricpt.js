@@ -23,7 +23,7 @@ const buttons5 = document.getElementById('Question5Buttons');
 
 var lastPage = 0;
 var currentQuestion = 0;
-var timeInterval = setInterval(startTimerfunction, 1000);
+var timeInterval; 
 var timer = 100;
 
 
@@ -32,17 +32,19 @@ function startGame() {
     console.log("startPage: " + startPage);
     startPage.style.display = "none";
     questionPage1.style.display = "block";
+    timeInterval= setInterval(startTimerfunction, 1000);
 }
 
 
 function startTimerfunction() {
     second.textContent = timer + "seconds";
-    timer--
+    
     console.log(timer);
-    if (timer === 0) {
+    if (timer <= 0) {
         
         clearInterval(timeInterval);
     }
+    timer--
 }
 
 function myFunction() {
@@ -81,7 +83,7 @@ function restartGame(){
 
 startButton.addEventListener('click', startTimerfunction);
 //startbutton
-setInterval(startTimerfunction, 1000);
+// setInterval(startTimerfunction, 1000);
 
 startButton.addEventListener('click', startGame);
 
